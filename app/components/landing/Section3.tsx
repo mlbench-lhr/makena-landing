@@ -138,7 +138,7 @@ export default function Section3() {
             Our 3-step plan from chaos to clarity{" "}
           </p>
         </div>
-        <div className="ps-4 pe-4 sm:ps-10 sm:pe-10 gap-y-4 md:ps-17.5 mt-4 md:mt-8 relative w-full [@media(min-width:1200px)]:w-fit h-fit flex-col [@media(min-width:920px)]:flex-row flex justify-evenly [@media(min-width:1200px)]:justify-start py-5 lg:py-0 items-start [@media(min-width:920px)]:items-center [@media(min-width:1200px)]:-mt-[10%] [@media(min-width:1200px)]:-ms-[15%]">
+        <div className="ps-4 pe-4 sm:ps-10 sm:pe-10 gap-y-8 md:ps-17.5 mt-4 md:mt-8 relative w-full [@media(min-width:1200px)]:w-fit h-fit flex-col-reverse [@media(min-width:920px)]:flex-row flex justify-evenly [@media(min-width:1200px)]:justify-start py-5 lg:py-0 items-start [@media(min-width:920px)]:items-center [@media(min-width:1200px)]:-mt-[10%] [@media(min-width:1200px)]:-ms-[15%]">
           <div className="hidden [@media(min-width:1200px)]:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
