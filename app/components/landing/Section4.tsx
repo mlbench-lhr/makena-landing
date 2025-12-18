@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Section4() {
   return (
-    <section className="relative w-full h-fit flex flex-col items-center text-center py-20 bg-[#FFFCF6] overflow-hidden">
+    <section className="relative w-full h-fit flex flex-col items-center text-center py-15 bg-[#FFFCF6] overflow-hidden">
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl  mx-auto">
         <h1 className="text-xl md:text-[30px] font-extrabold leading-tight gradient-block">
@@ -14,7 +14,7 @@ export default function Section4() {
           A personal journey intended to spark a movement of clarity.{" "}
         </p>
       </div>
-      <div className="flex justify-between items-start w-full [@media(min-width:1400px)]:w-365 ps-4 pe-4 sm:ps-10 sm:pe-10 md:ps-17.5 mt-10 md:mt-18 ">
+      <div className="flex justify-between items-start w-full [@media(min-width:1460px)]:w-365 ps-4 pe-4 sm:ps-10 sm:pe-10 md:ps-17.5 mt-10 md:mt-18 ">
         <div className="flex flex-col justify-start w-full md:w-[60%] lg:w-[50%] xl:w-169 gap-2 items-start ">
           <h3 className="md:text-[18px] lg:text-[20px] xl:text-[22px] font-normal text-start text-black/50 w-full">
             Hi, I’m Loise, the dreamer behind kena. In 2021, I moved to a new

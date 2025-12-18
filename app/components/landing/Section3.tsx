@@ -3,7 +3,7 @@
 export default function Section3() {
   return (
     <section className="relative w-full h-fit [@media(min-width:1200px)]:h-287.5 flex flex-col items-center text-center py-20 bg-white overflow-hidden">
-      <div className="relative w-full [@media(min-width:1400px)]:w-365 h-fit [@media(min-width:1200px)]:h-287.5 flex flex-col justify-between items-center">
+      <div className="relative w-full [@media(min-width:1460px)]:w-365 h-fit [@media(min-width:1200px)]:h-287.5 flex flex-col justify-between items-center">
         <div className="absolute top-5 left-5 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +218,7 @@ export default function Section3() {
           <p className="mt-2 sm:mt-4 max-w-2xl mx-auto text-gray-600 text-sm md:text-[20px] leading-relaxed px-4">
             Wake up calm, confident, and in control of your emotional story.{" "}
           </p>
-          <div className="mt-2 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="mt-2 sm:mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="cursor-not-allowed w-full sm:w-auto bg-[#2F5E4F] hover:bg-[#264A3E] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
               Join the Waitlist
             </button>

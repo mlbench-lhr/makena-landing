@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Section2() {
   return (
     <section className="relative w-full h-fit md:min-h-310 flex flex-col items-center text-center bg-[#FFFCF6] overflow-hidden">
-      <div className="relative w-full [@media(min-width:1400px)]:w-365 h-fit md:min-h-310 py-20">
+      <div className="relative w-full [@media(min-width:1460px)]:w-365 h-fit md:min-h-310 py-20">
         {/* Main Content */}
         <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-xl md:text-[30px] font-extrabold leading-tight gradient-block">
@@ -15,7 +15,7 @@ export default function Section2() {
             Big Emotions Don’t Have to Feel Overwhelming
           </p>
         </div>
-        <div className="flex justify-between items-center w-full flex-col-reverse gap-y-6 xl:flex-row [@media(min-width:1400px)]:w-365 ps-0 xl:ps-17.5">
+        <div className="flex justify-between items-center w-full flex-col-reverse gap-y-6 xl:flex-row [@media(min-width:1460px)]:w-365 ps-0 xl:ps-17.5">
           <div className="flex px-4 sm:px-10  flex-col justify-start gap-2 items-start w-full md:w-[80%] xl:w-125">
             <h3 className="text-base md:text-[20px] lg:text-[22px] font-normal text-start text-black/50">
               {
