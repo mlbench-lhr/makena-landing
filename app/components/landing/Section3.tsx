@@ -2,8 +2,8 @@
 
 export default function Section3() {
   return (
-    <section className="relative w-full h-287.5 flex flex-col items-center text-center py-20 bg-white overflow-hidden">
-      <div className="relative w-full [@media(min-width:1400px)]:w-365 h-287.5 flex flex-col justify-between items-center">
+    <section className="relative w-full h-fit [@media(min-width:1200px)]:h-287.5 flex flex-col items-center text-center py-20 bg-white overflow-hidden">
+      <div className="relative w-full [@media(min-width:1400px)]:w-365 h-fit [@media(min-width:1200px)]:h-287.5 flex flex-col justify-between items-center">
         <div className="absolute top-5 left-5 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -138,8 +138,8 @@ export default function Section3() {
             Our 3-step plan from chaos to clarity{" "}
           </p>
         </div>
-        <div className="relative w-fit h-fit flex justify-start items-center -mt-[10%] -ms-[15%]">
-          <div className="">
+        <div className="ps-4 pe-4 sm:ps-10 sm:pe-10 gap-y-4 md:ps-17.5 mt-4 md:mt-8 relative w-full [@media(min-width:1200px)]:w-fit h-fit flex-col [@media(min-width:920px)]:flex-row flex justify-evenly [@media(min-width:1200px)]:justify-start py-5 lg:py-0 items-start [@media(min-width:920px)]:items-center [@media(min-width:1200px)]:-mt-[10%] [@media(min-width:1200px)]:-ms-[15%]">
+          <div className="hidden [@media(min-width:1200px)]:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1068"
@@ -199,22 +199,22 @@ export default function Section3() {
             title="Unlock Growth"
             count={3}
             text="By taking charge of your journey with tools like forecasting, daily logging, flexible journaling, analytics, plus premium features like communities, gamified challenges, and curated content."
-            className="absolute -top-7 -right-1/7 flex flex-col justify-start items-start w-70 h-fit"
+            className="relative [@media(min-width:1200px)]:absolute [@media(min-width:1200px)]:-top-7 [@media(min-width:1200px)]:-right-1/7 flex flex-col justify-start items-start w-full [@media(min-width:920px)]:w-70 h-fit"
           />
           <TextBox
             title="Aspire"
             count={2}
             text="Choose the emotions you want to embrace, like calm, confident, or acceptance. kena allows you to reflect your goals using vivid, warm visuals that inspire your journey"
-            className="absolute top-1/2 left-[55%] flex flex-col justify-start items-start w-70 h-fit"
+            className="relative [@media(min-width:1200px)]:absolute [@media(min-width:1200px)]:top-1/2 [@media(min-width:1200px)]:left-[55%] flex flex-col justify-start items-start w-full [@media(min-width:920px)]:w-70 h-fit"
           />
           <TextBox
             title="Capture"
             count={1}
             text="Identify your one to three core emotions—like grief, stress and hope. kena allows you to add engaging visuals to make abstract feelings tangible, concrete and easier to navigate."
-            className="absolute -bottom-[40%] left-[15%] flex flex-col justify-start items-start w-70 h-fit"
+            className="relative [@media(min-width:1200px)]:absolute [@media(min-width:1200px)]:-bottom-[40%] [@media(min-width:1200px)]:left-[15%] flex flex-col justify-start items-start w-full [@media(min-width:920px)]:w-70 h-fit"
           />
         </div>
-        <div className="relative z-10 max-w-4xl  mx-auto">
+        <div className="ps-4 px-4 sm:px-10 relative z-10 max-w-4xl  mx-auto">
           <p className="mt-2 sm:mt-4 max-w-2xl mx-auto text-gray-600 text-sm md:text-[20px] leading-relaxed px-4">
             Wake up calm, confident, and in control of your emotional story.{" "}
           </p>
@@ -246,10 +246,11 @@ const TextBox = ({
 }) => {
   return (
     <div className={className}>
-      <span className="numbers-class text-[#20573b]/5 absolute right-0 top-[29%] bg-red-400 leading-0 text-[204px]">
+      <span className="numbers-class text-[#20573b]/5 absolute right-0 top-[29%] leading-0 text-[170px] lg:text-[204px]">
         {count}
       </span>
       <svg
+        className="size-12 lg:size-16"
         xmlns="http://www.w3.org/2000/svg"
         width="64"
         height="64"
@@ -259,8 +260,10 @@ const TextBox = ({
         <rect width="64" height="64" rx="20" fill="#20573B" />
         <rect x="20" y="20" width="23" height="23" rx="10" fill="white" />
       </svg>
-      <h3 className="text-[24px] font-semibold text-black mt-5">{title}</h3>
-      <span className="text-[18px] font-normal text-black text-start">
+      <h3 className="text-[20px] lg:text-[24px] font-semibold text-black mt-5">
+        {title}
+      </h3>
+      <span className="text-sm lg:text-[18px] font-normal text-black text-start">
         {text}
       </span>
     </div>

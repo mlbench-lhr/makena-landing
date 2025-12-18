@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-275 flex flex-col items-center text-center px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+    <section className="relative w-full h-fit md:h-200 lg:h-275 flex flex-col items-center text-center bg-white overflow-hidden">
       <Image
         src="/images/landing/heroSection/blue-line.svg"
         alt=""
@@ -13,7 +13,7 @@ export default function HeroSection() {
         className="absolute bottom-0 translate-y-1/6 left-1/2 -translate-x-1/2 w-full max-w-none opacity-50 pointer-events-none"
         priority
       />{" "}
-      <div className="relative w-full [@media(min-width:1400px)]:w-365 min-h-275 flex flex-col items-center text-center bg-transparent overflow-hidden">
+      <div className="relative w-full [@media(min-width:1400px)]:w-365 py-10 md:py-0 h-150 md:h-200 lg:h-275 flex  px-4 sm:px-6 lg:px-8 flex-col items-center text-center bg-transparent overflow-hidden">
         <div className="absolute top-2 left-0 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -97,8 +97,8 @@ export default function HeroSection() {
           </svg>
         </div>
         {/* Main Content */}
-        <div className="relative z-10 max-w-4xl  pt-30 mx-auto">
-          <h1 className="text-3xl sm:text-[26px] md:text-[36px] lg:text-[46px] font-bold leading-tight gradient-block">
+        <div className="relative z-10 max-w-4xl md:pt-30 mx-auto">
+          <h1 className="text-xl sm:text-[26px] md:text-[36px] lg:text-[46px] font-bold leading-tight gradient-block">
             {"Riding life's emotional waves?"}
             <br />
             Seek clarity with kena.
@@ -129,7 +129,7 @@ export default function HeroSection() {
           alt=""
           width={160}
           height={160}
-          className="absolute right-[8%] top-[38%] sm:top-[42%] lg:top-[35%] w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 xl:w-32 xl:h-32 hidden sm:block"
+          className="absolute right-[8%] top-[80%] sm:top-[70%] lg:top-[35%] w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 xl:w-32 xl:h-32 block"
         />
 
         {/* Confused Emoji - Bottom Left */}
@@ -138,7 +138,7 @@ export default function HeroSection() {
           alt=""
           width={160}
           height={160}
-          className="absolute left-[15%] sm:left-[20%] lg:left-[25%] top-[68%] sm:top-[65%] lg:top-[62%] w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 xl:w-32 xl:h-32 hidden sm:block"
+          className="absolute left-[15%] sm:left-[20%] lg:left-[25%] top-[65%] sm:top-[65%] lg:top-[62%] w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 xl:w-32 xl:h-32 block"
         />
 
         {/* Heart 1 - Top Right */}
@@ -147,7 +147,7 @@ export default function HeroSection() {
           alt=""
           width={60}
           height={60}
-          className="absolute right-[12%] sm:right-[15%] lg:right-[18%] top-[28%] sm:top-[30%] lg:top-[28%] w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 opacity-80 hidden md:block"
+          className="absolute right-[12%] sm:right-[15%] lg:right-[18%] top-[70%] sm:top-[65%] lg:top-[28%] w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 opacity-80 block"
         />
 
         {/* Heart 2 - Bottom Left */}
@@ -156,7 +156,7 @@ export default function HeroSection() {
           alt=""
           width={60}
           height={60}
-          className="absolute left-[8%] sm:left-[10%] lg:left-[12%] top-[75%] sm:top-[73%] lg:top-[72%] w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 opacity-80 hidden md:block"
+          className="absolute left-[8%] sm:left-[10%] lg:left-[12%] top-[75%] sm:top-[73%] lg:top-[72%] w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 opacity-80 block"
         />
       </div>
     </section>

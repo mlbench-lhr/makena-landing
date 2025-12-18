@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Section2() {
   return (
-    <section className="relative w-full min-h-310 flex flex-col items-center text-center bg-[#FFFCF6] overflow-hidden">
-      <div className="relative w-full [@media(min-width:1400px)]:w-365 min-h-310 py-20">
+    <section className="relative w-full h-fit md:min-h-310 flex flex-col items-center text-center bg-[#FFFCF6] overflow-hidden">
+      <div className="relative w-full [@media(min-width:1400px)]:w-365 h-fit md:min-h-310 py-20">
         {/* Main Content */}
         <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-xl md:text-[30px] font-extrabold leading-tight gradient-block">
@@ -15,21 +15,19 @@ export default function Section2() {
             Big Emotions Don’t Have to Feel Overwhelming
           </p>
         </div>
-        <div className="flex justify-between items-center w-full [@media(min-width:1400px)]:w-365 ps-4 sm:ps-10 md:ps-17.5">
-          <div className="flex flex-col justify-start gap-2 items-start w-full md:w-125">
-            <h3 className="text-[22px] font-normal text-start text-black/50">
-              Life changes—like loss, marriage, relocation, divorce, or
-              adolescence—can change your emotional landscape and leave you
-              feeling out of touch with yourself. Untended, they may shift
-              behaviors, challenge relationships, or cloud your perspective.
-              We've been there too, and you deserve emotional clarity and ease.
+        <div className="flex justify-between items-center w-full flex-col-reverse gap-y-6 xl:flex-row [@media(min-width:1400px)]:w-365 ps-0 xl:ps-17.5">
+          <div className="flex px-4 sm:px-10  flex-col justify-start gap-2 items-start w-full md:w-[80%] xl:w-125">
+            <h3 className="text-base md:text-[20px] lg:text-[22px] font-normal text-start text-black/50">
+              {
+                "Life changes—like loss, marriage, relocation, divorce, or adolescence—can change your emotional landscape and leave you feeling out of touch with yourself. Untended, they may shift behaviors, challenge relationships, or cloud your perspective. We've been there too, and you deserve emotional clarity and ease."
+              }
             </h3>
-            <h4 className="text-[30px] font-bold text-[#20573B] text-start">
+            <h4 className="text-[20px] md:text-[24px] lg:text-[30px] font-bold text-[#20573B] text-start">
               Kena is your guide, crafted by a founder who's navigated these
               waves and working with wellness experts' support to curate
               something professional.
             </h4>
-            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="z-20 w-full mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button className="w-full sm:w-auto bg-[#2F5E4F] hover:bg-[#264A3E] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
                 Join the Waitlist
               </button>
@@ -39,7 +37,7 @@ export default function Section2() {
               </button>
             </div>
           </div>
-          <div className="">
+          <div className="-ms-6 md:ms-0">
             <Image
               src={"/Group_1000013057.png"}
               alt=""
