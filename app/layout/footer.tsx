@@ -3,7 +3,7 @@
 export default function Footer() {
   return (
     <footer className="w-full bg-[#2F563C] text-white py-10 md:py-20">
-      <div className="flex justify-between flex-col md:flex-row gap-y-6 w-full px-4 md:px-10 [@media(min-width:1400px)]:px-26 [@media(min-width:1400px)]:w-365 mx-auto">
+      <div className="flex justify-between flex-col md:flex-row gap-y-6 w-full px-4 md:px-10 [@media(min-width:1460px)]:px-26 [@media(min-width:1460px)]:w-365 mx-auto">
         <div className="max-w-sm">
           <h2 className="text-3xl font-serif mb-4">Kena</h2>
 

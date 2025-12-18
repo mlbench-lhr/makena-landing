@@ -13,7 +13,7 @@ export default function HeroSection() {
         className="absolute bottom-0 translate-y-1/6 left-1/2 -translate-x-1/2 w-full max-w-none opacity-50 pointer-events-none"
         priority
       />{" "}
-      <div className="relative w-full [@media(min-width:1400px)]:w-365 py-10 md:py-0 h-150 md:h-200 lg:h-275 flex  px-4 sm:px-6 lg:px-8 flex-col items-center text-center bg-transparent overflow-hidden">
+      <div className="relative w-full [@media(min-width:1460px)]:w-365 py-10 md:py-0 h-150 md:h-200 lg:h-275 flex  px-4 sm:px-6 lg:px-8 flex-col items-center text-center bg-transparent overflow-hidden">
         <div className="absolute top-2 left-0 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
