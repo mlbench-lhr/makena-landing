@@ -2,8 +2,8 @@
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#2F563C] text-white py-20">
-      <div className="flex justify-between w-full px-10 [@media(min-width:1400px)]:px-26 [@media(min-width:1400px)]:w-365 mx-auto">
+    <footer className="w-full bg-[#2F563C] text-white py-10 md:py-20">
+      <div className="flex justify-between flex-col md:flex-row gap-y-6 w-full px-4 md:px-10 [@media(min-width:1400px)]:px-26 [@media(min-width:1400px)]:w-365 mx-auto">
         <div className="max-w-sm">
           <h2 className="text-3xl font-serif mb-4">Kena</h2>
 
@@ -13,7 +13,7 @@ export default function Footer() {
             Grow with intention.
           </p>
 
-          <button className="bg-[#D7A95F] text-white text-sm px-6 py-2 rounded">
+          <button className="bg-[#F0B964] text-white text-[14px] px-6 py-2 rounded-lg">
             Download
           </button>
         </div>

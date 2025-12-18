@@ -1,30 +1,107 @@
-// components/navbar.tsx
-
-import Image from "next/image";
+"use client";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <nav className="w-full bg-[#2F563C] px-26 py-4 flex items-center justify-center">
-      <div className="w-full [@media(min-width:1400px)]:w-365 bg-[#2F563C] flex items-center justify-between relative">
-        <div className="flex items-center gap-3">
+    <nav className="w-full bg-[#2F563C] px-4 sm:px-6 lg:px-26 py-4">
+      <div className="w-full max-w-[1400px] mx-auto flex items-center justify-between relative">
+        {/* Logo */}
+        <div className="flex items-center gap-3 z-20">
           <span className="text-white text-xl font-serif">Kena</span>
         </div>
 
-        <div className="flex items-center gap-10 left-1/2 absolute -translate-x-1/2">
-          <a className="text-white text-sm tracking-wide" href="#">
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
+          <a
+            className="text-white text-sm tracking-wide hover:text-[#F0B964] transition-colors"
+            href="#"
+          >
             Home
           </a>
-          <a className="text-white text-sm tracking-wide" href="#">
+          <a
+            className="text-white text-sm tracking-wide hover:text-[#F0B964] transition-colors"
+            href="#"
+          >
             About Us
           </a>
-          <a className="text-white text-sm tracking-wide" href="#">
+          <a
+            className="text-white text-sm tracking-wide hover:text-[#F0B964] transition-colors"
+            href="#"
+          >
             Why Kena
           </a>
         </div>
 
-        <button className="bg-[#D7A95F] text-white text-sm px-5 py-2 rounded">
+        {/* Desktop CTA Button */}
+        <button className="hidden lg:block bg-[#F0B964] text-white text-[14px] px-5 py-2 rounded-lg hover:bg-[#e5a84d] transition-colors z-20">
           Download Now
         </button>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="lg:hidden text-white z-20 p-2 hover:bg-white/10 rounded-lg transition-colors"
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+        {/* Mobile Menu Overlay */}
+        {isMenuOpen && (
+          <div
+            className="lg:hidden fixed inset-0 bg-black/50 z-40"
+            onClick={() => setIsMenuOpen(false)}
+          />
+        )}
+
+        {/* Mobile Menu */}
+        <div
+          className={`lg:hidden fixed top-0 right-0 h-full w-[80%] md:w-64 bg-[#2F563C] shadow-xl z-50 transform transition-transform duration-300 ease-in-out ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="w-full flex justify-start ps-2 pt-4 items-center">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="lg:hidden text-white z-20 p-2 hover:bg-white/10 rounded-lg transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+          <div className="flex flex-col pt-2 px-6">
+            <a
+              className="text-white text-base py-3 border-b border-white/10 hover:text-[#F0B964] transition-colors"
+              href="#"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </a>
+            <a
+              className="text-white text-base py-3 border-b border-white/10 hover:text-[#F0B964] transition-colors"
+              href="#"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About Us
+            </a>
+            <a
+              className="text-white text-base py-3 border-b border-white/10 hover:text-[#F0B964] transition-colors"
+              href="#"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Why Kena
+            </a>
+            <button
+              className="bg-[#F0B964] text-white text-sm px-5 py-3 rounded-lg mt-6 hover:bg-[#e5a84d] transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Download Now
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
   );

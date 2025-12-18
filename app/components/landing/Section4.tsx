@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Section4() {
   return (
-    <section className="relative w-full min-h-310 flex flex-col items-center text-center py-20 bg-[#FFFCF6] overflow-hidden">
+    <section className="relative w-full h-fit flex flex-col items-center text-center py-20 bg-[#FFFCF6] overflow-hidden">
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl  mx-auto">
         <h1 className="text-xl md:text-[30px] font-extrabold leading-tight gradient-block">
@@ -14,9 +14,9 @@ export default function Section4() {
           A personal journey intended to spark a movement of clarity.{" "}
         </p>
       </div>
-      <div className="flex justify-between items-center w-full [@media(min-width:1400px)]:w-365 ps-4 sm:ps-10 md:ps-17.5 ">
-        <div className="flex flex-col justify-start gap-2 items-start w-full md:w-125">
-          <h3 className="text-[22px] font-normal text-start text-black/50">
+      <div className="flex justify-between items-start w-full [@media(min-width:1400px)]:w-365 ps-4 pe-4 sm:ps-10 sm:pe-10 md:ps-17.5 mt-10 md:mt-18 ">
+        <div className="flex flex-col justify-start w-full md:w-[60%] lg:w-[50%] xl:w-169 gap-2 items-start ">
+          <h3 className="md:text-[18px] lg:text-[20px] xl:text-[22px] font-normal text-start text-black/50 w-full">
             Hi, I’m Loise, the dreamer behind kena. In 2021, I moved to a new
             country, full of hope for an exciting adventure. Instead, I found
             myself navigating unfamiliar cultural differences and long work
@@ -34,23 +34,23 @@ export default function Section4() {
             kena together for your emotional clarity!
           </h3>
 
-          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="w-full mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="w-full sm:w-auto bg-[#2F5E4F] hover:bg-[#264A3E] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
               Join the Waitlist
             </button>
 
-            <button className="w-full sm:w-auto bg-[#D4A574] hover:bg-[#C49563] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
+            <button className="w-full sm:w-auto bg-[#F0B964] hover:bg-[#C49563] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
               Take the Quick Survey
             </button>
           </div>
         </div>
-        <div className="">
+        <div className="hidden md:block w-[40%] lg:w-[50%] xl:w-150">
           <Image
-            src={"/bubbles.svg"}
+            src={"/bubbles.png"}
             alt=""
             width={600}
             height={600}
-            className="w-auto h-auto"
+            className="w-full h-full"
           />
         </div>
       </div>
