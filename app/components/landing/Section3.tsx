@@ -215,10 +215,10 @@ export default function Section3() {
           />
         </div>
         <div className="ps-4 px-4 sm:px-10 relative z-10 max-w-4xl  mx-auto">
-          <p className="mt-2 sm:mt-4 max-w-2xl mx-auto text-gray-600 text-sm md:text-[20px] leading-relaxed px-4">
+          <p className="mt-2 sm:mt-12 max-w-2xl mx-auto text-gray-600 text-sm md:text-[20px] leading-relaxed px-4">
             Wake up calm, confident, and in control of your emotional story.{" "}
           </p>
-          <div className="mt-2 sm:mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="mt-2 md:mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="cursor-not-allowed w-full sm:w-auto bg-[#2F5E4F] hover:bg-[#264A3E] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
               Join the Waitlist
             </button>
