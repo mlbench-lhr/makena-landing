@@ -34,7 +34,7 @@ export default function Section2() {
                 Join the Waitlist
               </button>
 
-              <button className="w-full sm:w-auto bg-[#D4A574] hover:bg-[#C49563] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
+              <button className="w-full sm:w-auto bg-[#F0B964] hover:bg-[#C49563] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
                 Take the Quick Survey
               </button>
             </div>
@@ -49,37 +49,37 @@ export default function Section2() {
             />
           </div>
         </div>
-        <div className="absolute bottom-0 left-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="663"
-            height="330"
-            viewBox="0 0 663 330"
-            fill="none"
-          >
-            <path
-              d="M660.124 329.748L662.013 329.556C661.952 329.167 655.437 290.295 615.41 251.018C548.542 185.402 441.183 168.965 362.891 166.73C87.3726 158.869 18.4282 58.8944 1.8526 0L-6.10352e-05 0.339714C16.6948 59.664 86.0325 160.365 362.822 168.265C440.688 170.486 547.448 186.804 613.872 251.924C653.592 290.864 660.066 329.363 660.124 329.748Z"
-              fill="#20573B"
-            />
-          </svg>
-        </div>
-        <div className="absolute bottom-0 left-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1197"
-            height="405"
-            viewBox="0 0 1197 405"
-            fill="none"
-          >
-            <path
-              opacity="0.46"
-              d="M0 0.764313C0 0.764313 241.29 -21.2454 321.39 170.949C401.49 363.142 587.69 390.5 803.13 315.264C1018.57 240.028 1196.97 308.429 1196.97 404.807H0V0.764313Z"
-              fill="#F2BF64"
-              fill-opacity="0.32"
-            />
-          </svg>
-        </div>{" "}
       </div>
+      <div className="absolute bottom-0 left-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="663"
+          height="330"
+          viewBox="0 0 663 330"
+          fill="none"
+        >
+          <path
+            d="M660.124 329.748L662.013 329.556C661.952 329.167 655.437 290.295 615.41 251.018C548.542 185.402 441.183 168.965 362.891 166.73C87.3726 158.869 18.4282 58.8944 1.8526 0L-6.10352e-05 0.339714C16.6948 59.664 86.0325 160.365 362.822 168.265C440.688 170.486 547.448 186.804 613.872 251.924C653.592 290.864 660.066 329.363 660.124 329.748Z"
+            fill="#20573B"
+          />
+        </svg>
+      </div>
+      <div className="absolute bottom-0 left-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1197"
+          height="405"
+          viewBox="0 0 1197 405"
+          fill="none"
+        >
+          <path
+            opacity="0.46"
+            d="M0 0.764313C0 0.764313 241.29 -21.2454 321.39 170.949C401.49 363.142 587.69 390.5 803.13 315.264C1018.57 240.028 1196.97 308.429 1196.97 404.807H0V0.764313Z"
+            fill="#F2BF64"
+            fill-opacity="0.32"
+          />
+        </svg>
+      </div>{" "}
     </section>
   );
 }

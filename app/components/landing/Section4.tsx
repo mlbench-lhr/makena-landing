@@ -39,7 +39,7 @@ export default function Section4() {
               Join the Waitlist
             </button>
 
-            <button className="w-full sm:w-auto bg-[#D4A574] hover:bg-[#C49563] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
+            <button className="w-full sm:w-auto bg-[#F0B964] hover:bg-[#C49563] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
               Take the Quick Survey
             </button>
           </div>

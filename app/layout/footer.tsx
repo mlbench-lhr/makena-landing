@@ -13,7 +13,7 @@ export default function Footer() {
             Grow with intention.
           </p>
 
-          <button className="bg-[#D7A95F] text-white text-sm px-6 py-2 rounded">
+          <button className="bg-[#F0B964] text-white text-[14px] px-6 py-2 rounded-lg">
             Download
           </button>
         </div>

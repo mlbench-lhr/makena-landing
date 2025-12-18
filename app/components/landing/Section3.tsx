@@ -1,11 +1,9 @@
 // components/Hero.tsx
 
-import Image from "next/image";
-
 export default function Section3() {
   return (
-    <section className="relative w-full min-h-310 flex flex-col items-center text-center py-20  bg-white overflow-hidden">
-      <div className="relative w-full [@media(min-width:1400px)]:w-365 min-h-310 flex flex-col justify-between items-center">
+    <section className="relative w-full h-287.5 flex flex-col items-center text-center py-20 bg-white overflow-hidden">
+      <div className="relative w-full [@media(min-width:1400px)]:w-365 h-287.5 flex flex-col justify-between items-center">
         <div className="absolute top-5 left-5 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -132,13 +130,89 @@ export default function Section3() {
           </svg>
         </div>
         {/* Main Content */}
-        <div className="relative z-10 max-w-4xl  mx-auto">
+        <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-xl md:text-[30px] font-extrabold leading-tight gradient-block">
             Capture - Aspire - Unlock Growth
           </h1>
           <p className="mt-2 sm:mt-4 max-w-2xl mx-auto text-gray-600 text-sm md:text-[20px] leading-relaxed px-4">
             Our 3-step plan from chaos to clarity{" "}
           </p>
+        </div>
+        <div className="relative w-fit h-fit flex justify-start items-center -mt-[10%] -ms-[15%]">
+          <div className="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1068"
+              height="447"
+              viewBox="0 0 1068 447"
+              fill="none"
+            >
+              <g filter="url(#filter0_d_193_909)">
+                <path
+                  d="M25.5 309.297C73.5 344.297 185.3 410.297 248.5 394.297C327.5 374.297 347 271.297 469 247.297C591 223.297 680.5 306.797 775 186.297C869.5 65.7969 915.5 -13.2031 1042.5 3.7969"
+                  stroke="#F2BF64"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_193_909"
+                  x="0"
+                  y="0"
+                  width="1068"
+                  height="446.256"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="24" />
+                  <feGaussianBlur stdDeviation="12" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.215686 0 0 0 0 0.203922 0 0 0 0 0.662745 0 0 0 0.3 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_193_909"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_193_909"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+          <TextBox
+            title="Unlock Growth"
+            count={3}
+            text="By taking charge of your journey with tools like forecasting, daily logging, flexible journaling, analytics, plus premium features like communities, gamified challenges, and curated content."
+            className="absolute -top-7 -right-1/7 flex flex-col justify-start items-start w-70 h-fit"
+          />
+          <TextBox
+            title="Aspire"
+            count={2}
+            text="Choose the emotions you want to embrace, like calm, confident, or acceptance. kena allows you to reflect your goals using vivid, warm visuals that inspire your journey"
+            className="absolute top-1/2 left-[55%] flex flex-col justify-start items-start w-70 h-fit"
+          />
+          <TextBox
+            title="Capture"
+            count={1}
+            text="Identify your one to three core emotions—like grief, stress and hope. kena allows you to add engaging visuals to make abstract feelings tangible, concrete and easier to navigate."
+            className="absolute -bottom-[40%] left-[15%] flex flex-col justify-start items-start w-70 h-fit"
+          />
         </div>
         <div className="relative z-10 max-w-4xl  mx-auto">
           <p className="mt-2 sm:mt-4 max-w-2xl mx-auto text-gray-600 text-sm md:text-[20px] leading-relaxed px-4">
@@ -149,7 +223,7 @@ export default function Section3() {
               Join the Waitlist
             </button>
 
-            <button className="w-full sm:w-auto bg-[#D4A574] hover:bg-[#C49563] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
+            <button className="w-full sm:w-auto bg-[#F0B964] hover:bg-[#C49563] text-white px-6 sm:px-8 py-3 rounded-lg text-sm sm:text-base font-medium transition-colors shadow-md">
               Take the Quick Survey
             </button>
           </div>
@@ -158,3 +232,37 @@ export default function Section3() {
     </section>
   );
 }
+
+const TextBox = ({
+  className,
+  title,
+  text,
+  count,
+}: {
+  className: string;
+  title: string;
+  text: string;
+  count: number;
+}) => {
+  return (
+    <div className={className}>
+      <span className="numbers-class text-[#20573b]/5 absolute right-0 top-[29%] bg-red-400 leading-0 text-[204px]">
+        {count}
+      </span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="64"
+        height="64"
+        viewBox="0 0 64 64"
+        fill="none"
+      >
+        <rect width="64" height="64" rx="20" fill="#20573B" />
+        <rect x="20" y="20" width="23" height="23" rx="10" fill="white" />
+      </svg>
+      <h3 className="text-[24px] font-semibold text-black mt-5">{title}</h3>
+      <span className="text-[18px] font-normal text-black text-start">
+        {text}
+      </span>
+    </div>
+  );
+};
