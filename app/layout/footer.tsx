@@ -28,7 +28,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#founderStory" className="">
+              <a href="#howMakenaWorks" className="">
                 How Makena Works
               </a>
             </li>

@@ -5,7 +5,10 @@ import { JoinWaitlistModal } from "../JoinWaitlistModal";
 
 export default function Section3() {
   return (
-    <section className="relative w-full h-fit [@media(min-width:1300px)]:h-287.5 flex flex-col items-center text-center py-20 bg-white overflow-hidden">
+    <section
+      id="howMakenaWorks"
+      className="relative w-full h-fit [@media(min-width:1300px)]:h-287.5 flex flex-col items-center text-center py-20 bg-white overflow-hidden"
+    >
       <div className="relative w-full [@media(min-width:1460px)]:w-365 h-fit [@media(min-width:1300px)]:h-287.5 flex flex-col justify-between items-center">
         <div className="absolute top-5 left-5 ">
           <svg
