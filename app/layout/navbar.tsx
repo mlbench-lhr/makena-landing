@@ -7,8 +7,8 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className="bg-[#F3F4F6] text-[#374151] text-center py-2 text-sm font-semibold">
-        App is in development phase, and wil be live soon
+      <div className="bg-[#f0b964] text-[white] text-center py-2 text-base font-extrabold!">
+        App is in development phase, wil be live soon
       </div>
       <nav className="w-full bg-[#2F563C] px-4 sm:px-6 lg:px-26 py-4">
         <div className="w-full max-w-365 mx-auto flex items-center justify-between relative">
